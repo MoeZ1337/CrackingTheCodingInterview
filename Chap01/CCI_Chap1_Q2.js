@@ -1,6 +1,5 @@
-/*Write code to reverse a C-Style String. (C-String means that “abcd” is represented as
-	five characters, including the null character.)*/
-// cheating?
+/* 1.2 Write code to reverse a C-Style String. (C-String means that “abcd” is represented as
+	five characters, including the null character.) */
 
 str = 'This is a test!'; //'!' substituted for C-style null
 
