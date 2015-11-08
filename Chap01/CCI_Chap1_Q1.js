@@ -4,7 +4,7 @@
 var string1 = "this is a string with duplicates."
 var string2 = "abcdefgh"
 
-bitwiseAnswer = function(array) {
+var bitwiseAnswer = function(array) {
 	var bitw = 0;
 	for(var i = 0; i < array.length; i++) {
 		var val = array.charCodeAt(i) - 97;
@@ -14,7 +14,7 @@ bitwiseAnswer = function(array) {
 	return true;
 }
 
-arrayAnswer = function(array) {
+var arrayAnswer = function(array) {
 	var arr = new Array(256).fill(false);
 	for(var i = 0; i < array.length; i++) {
 		var val = array.charCodeAt(i);
@@ -24,7 +24,7 @@ arrayAnswer = function(array) {
 	return true;
 }
 
-nlognAnswer = function(array) {
+var nlognAnswer = function(array) {
 	array = array.split('').sort();
 	console.log(array)
 	for(var i = 0; i < array.length - 1; i++) {
@@ -33,7 +33,7 @@ nlognAnswer = function(array) {
 	return true;
 }
 
-n2Answer = function(array) {
+var n2Answer = function(array) {
 	array = array.split('');
 	for(var i = 0; i < array.length; i++) {
 		for(var j = i+1; j < array.length; j++) {

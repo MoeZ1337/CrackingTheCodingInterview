@@ -12,11 +12,9 @@
 	we have to set i to j at each row so the new row always starts at j,j
 	then i continues until length-j-1 with the minus 1 account for the last row which is getting changed at i.
 	next row and so forth would be {{j, i->(length)-j},{i->(length)-j,length-j},{length-j,length-j>i-1},{length-j>i-1,j}}
-	this last line might be in correct but the codes been tested soooo...
+	this last line might be in correct but the codes been tested soooo... */
 
-*/
-
-rotateImage = function(nxn) {
+var rotateImage = function(nxn) {
 	var length = nxn.length-1
 	for(var j = 0; j < nxn.length/2; j++) {
 		for(var i = j; i < (nxn.length-1)-j; i++) {
@@ -32,7 +30,7 @@ rotateImage = function(nxn) {
 	return nxn;
 }
 
-createNXN = function(n) {
+var createNXN = function(n) {
 	nxn = [];
 	for(var k = 0; k < n; k++)	{
 		temp = [];
@@ -44,14 +42,14 @@ createNXN = function(n) {
 	return nxn;
 }
 
-nxn1 = createNXN(1);
-nxn2 = createNXN(2);
-nxn3 = createNXN(3);
-nxn4 = createNXN(4);
-nxn5 = createNXN(5)
-nxn6 = createNXN(6)
-nxn7 = createNXN(7);
-nxn8 = createNXN(8);
+var nxn1 = createNXN(1);
+var nxn2 = createNXN(2);
+var nxn3 = createNXN(3);
+var nxn4 = createNXN(4);
+var nxn5 = createNXN(5)
+var nxn6 = createNXN(6)
+var nxn7 = createNXN(7);
+var nxn8 = createNXN(8);
 
 
 rotateImage(nxn3);

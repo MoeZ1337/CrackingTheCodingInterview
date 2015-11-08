@@ -1,6 +1,6 @@
 /* 1.4 Write a method to decide if two strings are anagrams or not. */
 
-anagramCompare = function(string1, string2) {
+var anagramCompare = function(string1, string2) {
 	string1 = string1.replace(/[^a-z0-9]/gi,'');
 	string2 = string2.replace(/[^a-z0-9]/gi,'');
 

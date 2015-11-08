@@ -12,7 +12,7 @@
 
 var str = 'this is a test!';
 
-doubleLoopRemoveDups = function(string) {
+var doubleLoopRemoveDups = function(string) {
 	var charArr = string.split('');
 	for(var i = 0; i < charArr.length; i++) {
 		for(var j = i+1; j < charArr.length; j++) {
@@ -26,7 +26,7 @@ doubleLoopRemoveDups = function(string) {
 }
 
 // Misses space character
-sortRemoveDups = function(string) {
+var sortRemoveDups = function(string) {
 	var charArr = string.split('').sort();
 	for(var i = 0; i < charArr.length - 1; i++) {
 		if(charArr[i] === charArr[i+1]) {
@@ -37,7 +37,7 @@ sortRemoveDups = function(string) {
 	return charArr.join('');
 }
 
-tailRemoveDups = function(string) {
+var tailRemoveDups = function(string) {
 	var charArr = string.split('');
 	var tail = 1;
 	var unique;
