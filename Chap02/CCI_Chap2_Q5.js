@@ -51,3 +51,11 @@ var findCycle = function(linked) {
 
 findCycle(cycle);
 findCycle(linked);
+
+// book implementation: two pointers meet
+var twoPointerSpeeds = fucntion(linked) {
+	var slower = linked;
+	var faster = linked;
+
+	
+}
